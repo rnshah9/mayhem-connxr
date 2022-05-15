@@ -1,0 +1,8 @@
+project: rnshah9/mayhem-connxr
+target: connxr
+tests: 
+  - file://test/mnist/test_data_set_0/input_0.pb
+
+cmds:
+  - cmd: /repo/build/connxr /repo/test/mnist/model.onnx @@
+    filepath: /test.pb
